@@ -19,7 +19,7 @@ public class Terning {
 	public void trillTerning() {
 		Random r = new Random();
 		
-		verdi = r.nextInt(5) + 1;
+		verdi = r.nextInt(6) + 1;
 	}
 
 	public Integer getVerdi() {
