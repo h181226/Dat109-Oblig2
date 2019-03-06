@@ -12,8 +12,9 @@ public class Kopp {
 	 * Standard konstruktø som oppretter to terninger
 	 */
 	public Kopp() {
-		terningSett.add(new Terning());
-		terningSett.add(new Terning());
+		for (int i = 0; i < 2; i++) {
+			terningSett.add(new Terning());
+		}
 	}
 	
 	/**
