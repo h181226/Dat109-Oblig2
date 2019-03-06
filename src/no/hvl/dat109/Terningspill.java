@@ -54,6 +54,10 @@ public class Terningspill {
 		
 	}
 	
+	/**
+	 * Triller terningene for alle spillerne og finner deretter vinneren
+	 * @return vinneren av spillet
+	 */
 	public Spiller Spill() {
 		Iterator<Spiller> it = spillere.iterator();
 		Spiller vinner = it.next();
