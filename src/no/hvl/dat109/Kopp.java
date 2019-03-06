@@ -40,7 +40,7 @@ public class Kopp {
 	 * Legger sammen verdien av terningene i terningSett
 	 * @return samlet verdi av terningene
 	 */
-	public int getVerdi() {
+	public int getSum() {
 		int sum = 0;
 		
 		for(Terning t : terningSett) {
