@@ -41,15 +41,17 @@ public class Terningspill {
 		try {
 			antallSpillere = Integer.parseInt(br.readLine());
 			
+			for(int i = 0; i < antallSpillere; i++) {
+				leggTilSpiller(br);
+			}
+			
 			br.close();
 		} catch (IOException e) {
 			System.out.println("Feil i leggTilSpiller ");
 			e.printStackTrace();
 		}
 		
-		for(int i = 0; i < antallSpillere; i++) {
-			leggTilSpiller();
-		}
+		
 	}
 	
 	public Spiller Spill() {
@@ -74,19 +76,10 @@ public class Terningspill {
 	/**
 	 * Spør etter navn på spilleren og legger spilleren til i samlingen spillere
 	 */
-	private void leggTilSpiller() {
-		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		
+	private void leggTilSpiller(BufferedReader br) throws IOException{
 		System.out.println("Skriv navn på spiller" + (spillere.size() + 1) +": ");
 		
-		try {
-			spillere.add(new Spiller(br.readLine()));
-			
-			br.close();
-		} catch (IOException e) {
-			System.out.println("Feil i leggTilSpiller ");
-			e.printStackTrace();
-		}
+		spillere.add(new Spiller(br.readLine()));
 	}
 
 }
