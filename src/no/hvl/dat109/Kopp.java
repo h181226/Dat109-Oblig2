@@ -12,6 +12,7 @@ public class Kopp {
 	 * Standard konstruktø som oppretter to terninger
 	 */
 	public Kopp() {
+		terningSett = new ArrayList<>();
 		for (int i = 0; i < 2; i++) {
 			terningSett.add(new Terning());
 		}
@@ -22,6 +23,7 @@ public class Kopp {
 	 * @param antall
 	 */
 	public Kopp(int antall) {
+		terningSett = new ArrayList<>();
 		for (int i = 0; i < antall; i++) {
 			terningSett.add(new Terning());
 		}
